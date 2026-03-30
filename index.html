@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdrianDesign - Strona w budowie</title>
+    <style>
+        /* Prosty styl, aby zdjęcie było na środku i dopasowane */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2c3e50; /* Ciemnoszare, eleganckie tło */
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Brak pasków przewijania */
+        }
+        
+        .container {
+            text-align: center;
+            max-width: 90%; /* Margines na telefonach */
+            max-height: 90vh; /* Margines od góry/dołu */
+        }
+
+        img {
+            max-width: 100%; /* Nie szersze niż ekran */
+            max-height: 80vh; /* Nie wyższe niż 80% ekranu */
+            height: auto; /* Zachowaj proporcje */
+            display: block;
+            margin: 0 auto;
+            /* Opcjonalnie: cień dla lepszego efektu na szarym tle */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+            border-radius: 8px; /* Lekko zaokrąglone rogi pliku */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="twoje_zdjecie.jpg" alt="AdrianDesign - Logo / W budowie">
+    </div>
+
+</body>
+</html>
