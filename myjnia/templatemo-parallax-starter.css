@@ -606,3 +606,48 @@ img {
         font-size: 34px;
     }
 }
+/* Styl dla tabeli cennika */
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.5); /* Przezroczyste tło pasujące do szablonu */
+    color: white;
+    font-size: 0.9rem;
+}
+
+.pricing-table th, .pricing-table td {
+    padding: 12px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.pricing-table th {
+    background: rgba(255, 255, 255, 0.1);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.pricing-table td:first-child {
+    text-align: left;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.table-responsive {
+    overflow-x: auto; /* To sprawia, że na telefonie tabelę przesuwa się palcem */
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .pricing-table { font-size: 0.8rem; }
+}
+
+.map-wrap iframe {
+    filter: grayscale(100%) contrast(90%);
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.map-wrap iframe:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
